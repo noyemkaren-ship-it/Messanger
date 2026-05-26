@@ -28,4 +28,8 @@ public class UserServeces {
      public User findByName(String name) {
           return userRepo.findByName(name);
      }
+
+     public void deleteUser(User user) {
+          userRepo.delete(user);
+     }
 }
