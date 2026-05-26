@@ -24,4 +24,8 @@ public class ChatService {
     public Iterable<Chat> getAllChats() {
         return chatRepo.findAll();
     }
+
+    public Iterable<Chat> getChatsByFirstUser(String firstUser) {
+        return chatRepo.findByFirstUser(firstUser);
+    }
 }
