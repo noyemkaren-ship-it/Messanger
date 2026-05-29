@@ -9,5 +9,6 @@ import java.util.List;
 public interface MessageRepo extends CrudRepository<Messang, Long> {
      Messang findByChatname(String chatname);
 
-     List<Messang> findByChatAndFrom(String chatname, String from);
+     // Исправлено: findByChat... изменено на findByChatname...
+     List<Messang> findByChatnameAndFrom(String chatname, String from);
 }

@@ -12,7 +12,7 @@ public class Messang {
      @Column(nullable = false)
      private String text;
 
-     @Column(nullable = false)
+     @Column(name = "sender", nullable = false)
      private String from;
 
      @Column(nullable = false)
@@ -58,5 +58,4 @@ public class Messang {
      public void setChatname(String chatname) {
           this.chatname = chatname;
      }
-
 }

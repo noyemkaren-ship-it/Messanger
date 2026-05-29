@@ -21,7 +21,7 @@ public class MessagServeces {
      }
 
      public List<Messang> getMessages(String chatname, String from) {
-          return messageRepo.findByChatAndFrom(chatname, from);
+          return messageRepo.findByChatnameAndFrom(chatname, from);
      }
 
      public void deleteMessage(Long id) {
